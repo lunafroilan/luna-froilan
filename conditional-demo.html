@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grade Validation</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+	<form class="col-sm-4">
+		<input type="number" id="grade_input" class="form-control">
+		<input type="submit" onclick="sub()" value="Enter" class="btn btn-primary">
+	</form>
+
+
+	<script type="text/javascript">
+
+		function sub() {
+
+			var student_grade = document.getElementById('grade_input').value;
+
+			if (student_grade > 100) {
+				alert("over the limit");
+			}else if (student_grade <= 100 && student_grade >=75){
+				alert("pasado");
+			} else{
+				alert("bagsak");
+			}
+		}
+		
+	</script>
+
+
+
+</body>
+</html>
